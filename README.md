@@ -28,13 +28,17 @@ What you need to install the software:
    ```bash
    git clone https://github.com/aosadev/Global-Nexus-ERP.git
 2. Navigate to the project directory and install dependencies:
+   ```bash
    cd Global-Nexus-ERP
    composer install
-3. Create a .env file from the example and adjust the database settings:
+4. Create a .env file from the example and adjust the database settings:
+   ```bash
    cp .env.example .env
-4. Run the initial migration to set up your database:
+6. Run the initial migration to set up your database:
+   ```bash
    php yii migrate
-5. Start the development server
+8. Start the development server
+   ```bash
    php yii serve
 Visit http://localhost:8080 in your browser to see the application running.
 
