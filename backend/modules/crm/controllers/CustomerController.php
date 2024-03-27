@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\crm\controllers;
+namespace backend\modules\crm\controllers;
 
 use app\modules\crm\models\Customer;
 use app\modules\crm\models\CustomerSearch;

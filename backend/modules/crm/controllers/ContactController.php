@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\crm\controllers;
+namespace backend\modules\crm\controllers;
 
 use app\modules\crm\models\Contact;
 use app\modules\crm\models\ContactSearch;
