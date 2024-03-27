@@ -88,3 +88,8 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+.required {
+    color: red;
+    margin-left: 5px; /* Ajusta el margen según sea necesario */
+}
