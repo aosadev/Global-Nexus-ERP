@@ -1,53 +1,71 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Global Nexus ERP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        main {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        p, li {
+            line-height: 1.6;
+        }
+        ul {
+            margin: 0;
+            padding: 0 20px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        section:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
 
-/** @var yii\web\View $this */
+<body>
+    <main>
+        <section>
+            <h2>Empower Your Business Globally</h2>
+            <p>Global Nexus ERP is the premier solution for managing your enterprise resources, connecting your business processes, and empowering global operations. With cutting-edge technology, sophisticated integration capabilities, and a user-friendly interface, Global Nexus ERP is designed to elevate your business to new heights of efficiency and productivity.</p>
+        </section>
+        
+        <section>
+            <h2>Why Choose Global Nexus ERP?</h2>
+            <ul>
+                <li>Unparalleled global connectivity</li>
+                <li>Sophisticated integration with existing systems</li>
+                <li>Scalable solutions for businesses of all sizes</li>
+                <li>Real-time data analytics and reporting</li>
+                <li>Secure, reliable, and future-proof technology</li>
+            </ul>
+        </section>
 
-$this->title = 'My Yii Application';
-?>
-<div class="site-index">
-
-    <div class="jumbotron text-center bg-transparent">
-        <h1 class="display-4">Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
-
-    </div>
-</div>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Ready to transform your business with Global Nexus ERP? <a href="contact.html">Contact us today</a> to learn more about our solutions and how we can help your enterprise achieve its full potential.</p>
+        </section>
+    </main>
+</body>
+</html>

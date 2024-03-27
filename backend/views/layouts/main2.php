@@ -11,18 +11,6 @@ use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
 
 AppAsset::register($this);
-$this->registerCss("
-    .breadcrumb {
-        background-color: #e0f0ff; /* Un azul claro. */
-        border-radius: 0.375rem; /* 6px si 1rem = 16px. Ajusta según tus preferencias. */
-        padding: 0.75rem 1rem; /* Aumenta el padding para más grosor. */
-    }
-    .breadcrumb-item + .breadcrumb-item::before {
-        color: #666; /* Color de los separadores. */
-    }
-");
-
-
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -34,16 +22,13 @@ $this->registerCss("
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="d-flex flex-column h-100">
-<?php $this->beginBody() ?>
-
 <header>
     <?php
     NavBar::begin([
-        'brandLabel' => Html::img('@web/images/Logo.webp', ['alt' => Yii::$app->name, 'style' => 'height:50px;']),
+        'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar navbar-expand-md navbar-light fixed-top', // Cambiado a navbar-light
+            'class' => 'navbar navbar-expand-md navbar-dark bg-dark fixed-top',
         ],
     ]);
     

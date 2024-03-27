@@ -8,6 +8,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-backend',
+    'name' => 'Global Nexus ERP',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
@@ -16,8 +17,26 @@ return [
             'class' => 'backend\modules\crm\Module',
             // otras configuraciones específicas del módulo pueden ir aquí
         ],
+        'gridview' => [
+            'class' => '\kartik\grid\Module',
+            // otras configuraciones del módulo pueden ir aquí
+        ],
     ],
     'components' => [
+        'assetManager' => [
+            'bundles' => [
+                'yii\bootstrap5\BootstrapAsset' => [
+                    'css' => [
+                        'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css',
+                    ],
+                ],
+                'yii\bootstrap5\BootstrapPluginAsset' => [
+                    'js' => [
+                        'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js',
+                    ],
+                ],
+            ],
+        ],
         'request' => [
             'csrfParam' => '_csrf-backend',
         ],
@@ -30,6 +49,7 @@ return [
             // this is the name of the session cookie used for login on the backend
             'name' => 'advanced-backend',
         ],
+        
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
